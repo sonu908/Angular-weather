@@ -1,0 +1,109 @@
+* {
+  color: aliceblue;
+}
+.base {
+  height: 100vh;
+  background-size: cover;
+/* background-image: url(https://images.pexels.com/photos/531767/pexels-photo-531767.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1); */
+}
+.container {
+  position: relative;
+  top: 10%;
+}
+#input {
+  backdrop-filter: blur(5px);
+  background-color: transparent;
+  max-width: 900px;
+  height: 50px;
+  margin: auto;
+  border-radius: 40px;
+  border: 1px rgba(255, 255, 255, 0.253) solid;
+}
+/* #input:hover{
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+  rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+} */
+#bar {
+  position: relative;
+  width: 95%;
+  outline: none;
+  height: 50px;
+  border: 0;
+  color: white;
+  border-radius: 40px;
+  backdrop-filter: blur(5px);
+  background-color: transparent;
+}
+#bar[type=text]{
+  padding-left: 3%;
+  color: black;
+}
+#bar::-webkit-input-placeholder{
+  color: rgba(240, 248, 255, 0.436);
+}
+#button {
+  width: auto;
+  top: 0;
+  font-size: 20px;
+  backdrop-filter: blur(5px);
+  background-color: transparent;
+  border: 0;
+}
+.result {
+  max-width: 900px;
+  margin: auto;
+}
+.card {
+  transition: ease-in-out 1s;
+  backdrop-filter: blur(2px);
+  margin-top: 50px;
+  border-radius: 40px;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  background-color: transparent;
+  border: 0;
+  max-height: 900px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+  .card:hover{
+
+  backdrop-filter: blur(9px);
+  transition: ease-in-out 1s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+
+}
+.list-group li {
+  background-color: transparent;
+}
+.card ._clouds{
+  width: 100px;
+  position: absolute;
+}
+.card-title
+{
+  font-size: 50px;
+}
+.group  {
+
+display: flex;
+justify-content: space-evenly;
+
+}
+.card h5{
+  font-family: 'Oswald', sans-serif;}
+h5 span{
+font-size: 30px;
+}
+h6 i
+{
+  margin-right: 9px;
+}
+/*  and (max-width : 480px)  */
+@media only screen and (min-width : 238px) and (max-width : 784px) {
+
+#bar{
+  width: 90%;
+}
+
+}
